@@ -7,6 +7,6 @@ AS
 BEGIN
     RETURN
     (
-        SELECT COUNT(*) FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = @name
+        SELECT COUNT(*) FROM dbo.something WHERE TABLE_NAME = @name
     );
 END
